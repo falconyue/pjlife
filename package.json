@@ -1,22 +1,18 @@
 {
   "name": "pjlife",
   "version": "0.0.0",
+  "main": "server.js",
   "private": true,
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "bce-sdk-js": "^0.1.8",
     "body-parser": "^1.15.2",
-    "bootstrap": "^3.3.7",
     "cookie-parser": "~1.4.3",
     "debug": "~2.2.0",
     "ejs": "~2.4.1",
     "express": "~4.13.4",
-    "express-session": "^1.14.2",
-    "jquery": "^3.1.0",
     "morgan": "~1.7.0",
-    "multer": "^1.2.0",
     "mysql": "2.0.0-alpha9",
     "serve-favicon": "~2.3.0"
   }
