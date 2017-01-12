@@ -3,10 +3,11 @@ var router = express.Router();
 var db = require('./db_config.js');
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  db.query('select * from pjlife_article order by add_time desc', function(err, items) {
-    if(err) console.log(JSON.stringify(err));
-    res.render('index', {article_list: items});
-  })
+  // db.query('select * from pjlife_article order by add_time desc', function(err, items) {
+  //   if(err) console.log(JSON.stringify(err));
+  //   res.render('index', {article_list: items});
+  // })
+  res.send('hello openshift!')
 });
 
 router.get('/article', function(req, res, next) {
