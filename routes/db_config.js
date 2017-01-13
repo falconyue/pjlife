@@ -12,7 +12,7 @@ var option = {
   password: password,
   database: db_name
 }
-
+console.log(process.env.OPENSHIFT_MYSQL_DB_USERNAME);
 var client = mysql.createConnection(option);
 
 module.exports = client;
