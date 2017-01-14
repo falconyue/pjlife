@@ -3,7 +3,7 @@ var mysql = require('mysql');
 var username = 'userLTL';//用户AK
 var password = 'Fy8LmKCCaMchQN3F';//用户SK
 var db_host = process.env.MYSQL_SERVICE_HOST;
-var db_port = process.env.MYSQL_SERVICE_HOST;
+var db_port = process.env.MYSQL_SERVICE_PORT;
 var db_name = 'sampledb';
 var option = {
   host: db_host,
