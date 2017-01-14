@@ -7,10 +7,9 @@ router.get('/add', function(req, res, next) {
 });
 
 router.post('/addsave', function(req, res, next) {
-  console.log(JSON.stringify(req.body));
-  db.query('INSERT INTO article_list SET ?', req.body, function (error, results, fields) {
+  db.query('INSERT INTO pjlife_article SET ?', req.body, function (error, results, fields) {
     if (error) console.log(JSON.stringify(error));
-    res.send('article/add');
+    res.render('article/add');
   });
 });
 
